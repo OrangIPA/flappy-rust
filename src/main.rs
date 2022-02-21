@@ -42,7 +42,7 @@ impl Game {
 
         }
 
-        if (self.bird.pos <= 0.0) || (self.bird.pos >= 250.0){
+        if (self.bird.pos <= 0.0) || (self.bird.pos >= 280.0){
             self.reset();
         }
 
@@ -63,7 +63,7 @@ impl Game {
 
     fn pressed(&mut self, btn: &Button){
         if let &Button::Keyboard(Key::Space) = btn {
-            self.bird.velocity = -8.0;
+            self.bird.velocity = -10.0;
         }
 
         if let &Button::Keyboard(Key::R) = btn {
